@@ -15,7 +15,12 @@
 
     // array of obj using generics
 
-    const user: GenericsArray<{name: string, age: number}> = [
+    interface User {
+        name: string;
+        age:number
+    }
+
+    const user: GenericsArray<User> = [
         {
             name: 'Hasib',
             age: 25
